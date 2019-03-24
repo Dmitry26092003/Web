@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Домашняя страница (Игры и приложения от программистов на "ЗМЕЙКЕ")</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>{% include "home/includes/html.html" %}</h1>
+      <p>
+        <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+        <a href="/news" class="btn btn-primary btn-lg">Новости</a>
+        <a href="/downloads" class="btn btn-primary btn-lg">Скачать</a>
+        <a href="/contact" class="btn btn-info btn-lg">Контакты</a>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+    <img src="{% static 'home/image/0b42be501f9ae035b60fcf46bceeacdb.jpg' %}" class="img-thumbnail">
+    <hr>
+    &copy; Все права защищены 2018
+  </div>
+</body>
+</html>

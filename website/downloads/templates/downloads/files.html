@@ -1,0 +1,9 @@
+{% extends "home/wreapper.html" %}
+
+{% block content %}
+    {% for file in abject_list %}
+        <a href="{{file.id}}"><h2>{{file.Name}}</h2></a>
+        <h3>{{file.Date|date:"d-m-Y"}}</h3>
+        <p>{{file.Description}}</p>
+    {% endfor %}
+{% endblock %}
