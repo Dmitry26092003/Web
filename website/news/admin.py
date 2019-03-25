@@ -1,4 +1,4 @@
 from django.contrib import admin
-from downloads.models import File
+from news.models import Post
 # Register your models here.
-admin.site.register(File)
+admin.site.register(Post)
