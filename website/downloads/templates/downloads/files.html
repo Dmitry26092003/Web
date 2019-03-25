@@ -4,7 +4,7 @@
     {% for file in object_list %}
         <a href="{{file.id}}"><h2>{{file.Name}}</h2></a>
 
-        <h3>{{file.Date|date:"d-m-Y"}}</h3>
+        <h6>{{file.Date|date:"d-m-Y"}}</h6>
         <p>{{file.Description}}</p>
     {% endfor %}
 {% endblock %}
