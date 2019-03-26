@@ -4,6 +4,5 @@
     {% for post in object_list %}
         <a href="{{post.id}}"><h2>{{post.Name}}</h2></a>
         <h6>{{post.Date|date:"d-m-Y"}}</h6>
-        <p>{{post.Post}}</p>
     {% endfor %}
 {% endblock %}

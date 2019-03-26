@@ -2,9 +2,9 @@
 
 {% block content %}
     {% for file in object_list %}
+        <hr>
         <a href="{{file.id}}"><h2>{{file.Name}}</h2></a>
-
         <h6>{{file.Date|date:"d-m-Y"}}</h6>
-        <p>{{file.Description}}</p>
+        <p>Жанр: {{file.Genre}}</p>
     {% endfor %}
 {% endblock %}

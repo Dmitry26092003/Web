@@ -2,6 +2,6 @@
 
 {% block content %}
     {% for val in values %}
-        <p>{{val}}</p>
+        <p>{{val|safe}}</p>
     {% endfor %}
 {% endblock %}

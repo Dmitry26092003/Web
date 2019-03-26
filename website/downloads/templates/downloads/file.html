@@ -1,0 +1,9 @@
+{% extends "downloads/wreapper.html" %}
+
+{% block content %}
+    <h2 class="text-info">{{file.Name}}</h2>
+    <h5 class="text-info">Дата добавления: {{file.Date|date:"d-m-Y"}}</h5>
+    <h6 class="text-info">{{file.Genre}}</h6>
+    <p class="text-info">{{file.Description|safe|linebreaks}}</p>
+
+{% endblock %}
