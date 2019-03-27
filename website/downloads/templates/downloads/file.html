@@ -5,5 +5,5 @@
     <h5 class="text-info">Дата добавления: {{file.Date|date:"d-m-Y"}}</h5>
     <h6 class="text-info">{{file.Genre}}</h6>
     <p class="text-info">{{file.Description|safe|linebreaks}}</p>
-
+    <a href={{file.FileName}} class="btn btn-info btn-lg">Скачать</a>
 {% endblock %}
