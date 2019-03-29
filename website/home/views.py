@@ -19,3 +19,4 @@ def contact(request):
                               '<h2>Наша группа в вк:</h2>',
                               '<a href="https://vk.com/pythongame"><p>https://vk.com/pythongame</p></a>'],
                    'PageName': ['Контакты']})
+# можно 55
